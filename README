@@ -1,0 +1,21 @@
+####Adaboost#####
+
+This Directory is AdaboostModule
+
+How to Use
+
+1:Learning adaboost arugument is a data 
+data format is 2 dimension data and label
+
+sh learn.sh $1
+
+2:Recognition
+
+Compile
+gcc Evaluation2.c w_func.c -lm 
+./a.out smpl e_test2
+
+smple is a test data 
+e_test2 is a learning data
+
+

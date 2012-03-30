@@ -1,0 +1,7 @@
+Exception: STATUS_ACCESS_VIOLATION at eip=6102048B
+eax=00C000F8 ebx=61243764 ecx=75C85BCA edx=003F4118 esi=00000000 edi=0022FA0C
+ebp=61020C00 esp=0022C7DC program=C:\cygwin\bin\xterm.exe, pid 4620, thread main
+cs=001B ds=0023 es=0023 fs=003B gs=0000 ss=0023
+Stack trace:
+Frame     Function  Args
+End of stack trace

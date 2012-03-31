@@ -1,0 +1,7 @@
+Exception: STATUS_ACCESS_VIOLATION at eip=6102048B
+eax=00FD0CD8 ebx=612492A4 ecx=767B5BCA edx=002F4118 esi=00000000 edi=0022FA0C
+ebp=61020C00 esp=0022C7DC program=C:\cygwin\bin\gnuplot.exe, pid 3704, thread main
+cs=001B ds=0023 es=0023 fs=003B gs=0000 ss=0023
+Stack trace:
+Frame     Function  Args
+End of stack trace

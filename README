@@ -5,17 +5,46 @@ This Directory is AdaboostModule
 How to Use
 
 1:Learning adaboost arugument is a data 
+
 data format is 2 dimension data and label
 
-sh learn.sh $1
+###For example###
+x    y    label
+0.21 0.51 1
+0.31 0.11 -1
+#################
+
+#command
+sh learn.sh $1 Datanumber+1
+#################
 
 2:Recognition
 
 Compile
-gcc Evaluation2.c w_func.c -lm 
-./a.out smpl e_test2
+#command
+gcc Evaluation2.c w_func.c -lm -o eval 
+./eval smpl e_test2
+#################
 
-smple is a test data 
+smple is a test data
 e_test2 is a learning data
+
+Output the recognition data 
+
+class_p_2 class_m_2
+
+If you use cygwin,you want to show figure please enter the following command
+
+#command
+startxwin.exe
+################
+
+After you can look at the another display
+
+You enter the command
+
+#command
+plot "class_p_2","class_m_2"
+###############
 
 

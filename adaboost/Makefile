@@ -1,22 +1,19 @@
 
 CC = gcc
 
-adain	 : ada_input.o sort.o fit.o w_func.o Evaluation.o
-	$(CC) -lm -o $@ ada_input.o sort.o fit.o w_func.o Evaluation.o     
+adain	 : ada_input.o sort.o fit2.o w_func.o 
+	$(CC) -lm -o $@ ada_input.o sort.o fit2.o w_func.o      
 
 ada_input.o : ada_input.c ada.h
-		$(CC) -c $*.c
+		$(CC)  $*.c
 sort.o : sort.c ada.h
-	$(CC) -c $*.c
+	$(CC)  $*.c
 
-fit.o : fit.c ada.h
-	 $(CC) -c $*.c
+fit2.o : fit2.c ada.h
+	 $(CC) $*.c
 
 w_func.o : w_func.c ada.h
-	$(CC) -c $*.c
-
-Evaluation.o : Evaluation.c ada.h
-	$(CC) -c $*.c
+	$(CC) $*.c
 
 clean :
-	rm ada.h ada_input.o sort.o fit.o w_func.o Evaluation.o
+	rm ada.h ada_input.o sort.o fit2.o w_func.o 
